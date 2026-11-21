@@ -8,7 +8,7 @@
     var dark = theme === "dark";
     root.setAttribute("data-theme", dark ? "dark" : "light");
     root.style.colorScheme = dark ? "dark" : "light";
-    if (meta) meta.setAttribute("content", dark ? "#141311" : "#f3efe6");
+    if (meta) meta.setAttribute("content", dark ? "#1e1e2e" : "#f3efe6");
     if (!button) return;
     button.setAttribute("aria-pressed", dark ? "true" : "false");
     button.setAttribute(
