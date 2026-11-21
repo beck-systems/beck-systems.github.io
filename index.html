@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brandon Beck · Salesforce, GTM systems, AI enablement</title>
+  <meta name="description" content="Brandon Beck designs Salesforce and go-to-market systems, and the AI workflows around them, with a person on the approval button. Carmel, Indiana.">
+  <meta name="author" content="Brandon Beck">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://beck-systems.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="me" href="https://github.com/beck-systems">
+  <link rel="me" href="https://www.linkedin.com/in/brandon-beck-42044a49/">
+  <meta property="og:title" content="Brandon Beck · Salesforce, GTM systems, AI enablement">
+  <meta property="og:description" content="Salesforce and GTM systems, built with care — and AI that still has a human on the approval button.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beck-systems.github.io/">
+  <meta property="og:image" content="https://beck-systems.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Brandon Beck. Salesforce and GTM systems, built with care — and AI that still has a human on the approval button.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brandon Beck · Salesforce, GTM systems, AI enablement">
+  <meta name="twitter:description" content="Salesforce and GTM systems, built with care — and AI that still has a human on the approval button.">
+  <meta name="twitter:image" content="https://beck-systems.github.io/assets/img/og.png">
+  <meta name="twitter:image:alt" content="Brandon Beck. Salesforce and GTM systems, built with care — and AI that still has a human on the approval button.">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    (function () {
+      var theme = "light";
+      try {
+        var stored = localStorage.getItem("theme");
+        if (stored === "light" || stored === "dark") theme = stored;
+        else if (window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+      } catch (err) {
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+      }
+      var root = document.documentElement;
+      root.setAttribute("data-theme", theme);
+      root.style.colorScheme = theme;
+      root.classList.add("js");
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", theme === "dark" ? "#141311" : "#f3efe6");
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brandon Beck",
+    "jobTitle": "Senior Salesforce Business Analyst",
+    "description": "Salesforce technical business analyst and functioning product owner. A decade in GTM systems, including five years owning architecture for a 500+ user org.",
+    "url": "https://beck-systems.github.io/",
+    "image": "https://beck-systems.github.io/assets/img/avatar.jpg",
+    "homeLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Carmel",
+        "addressRegion": "IN",
+        "addressCountry": "US"
+      }
+    },
+    "sameAs": [
+      "https://github.com/beck-systems",
+      "https://www.linkedin.com/in/brandon-beck-42044a49/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "JumpCloud"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Indiana University Indianapolis"
+    },
+    "hasCredential": [
+      "Salesforce Certified Administrator",
+      "Salesforce Certified Advanced Administrator",
+      "Salesforce Certified Platform App Builder",
+      "Salesforce Certified Sales Cloud Consultant"
+    ],
+    "knowsAbout": [
+      "Salesforce",
+      "Sales Cloud",
+      "Service Cloud",
+      "CPQ",
+      "Revenue Cloud",
+      "RevOps",
+      "GTM systems",
+      "AI enablement"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="#top">Brandon Beck</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M21 14.5A8.5 8.5 0 0 1 9.5 3a7 7 0 1 0 11.5 11.5z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor"/>
+          <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.1 5.1l1.6 1.6M17.3 17.3l1.6 1.6M18.9 5.1l-1.6 1.6M6.7 17.3l-1.6 1.6"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="top" aria-labelledby="intro-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="identity">
+            <img class="avatar" src="assets/img/avatar.jpg" width="320" height="320" alt="Photo of Brandon Beck" fetchpriority="high">
+            <div>
+              <p class="eyebrow">Salesforce · GTM systems · AI enablement</p>
+              <p class="where">Carmel, Indiana · Remote</p>
+            </div>
+          </div>
+          <h1 id="intro-heading">Brandon Beck</h1>
+          <hr class="rule">
+          <p class="tagline">Salesforce and GTM systems, built with care — and AI that still has a human on the approval button.</p>
+          <div class="actions">
+            <a class="button" href="#projects">See the work</a>
+            <a class="button button-ghost external" href="https://github.com/beck-systems" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="button button-ghost external" href="https://www.linkedin.com/in/brandon-beck-42044a49/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+        <div class="bio">
+          <p>I am a Salesforce technical business analyst and functioning product owner with a decade in GTM systems, including five years owning architecture for a 500+ user org across Sales Cloud, Service Cloud, CPQ / Revenue Cloud, Marketing Cloud, and Experience Cloud.</p>
+          <p>I sit between GTM leaders, RevOps, and developers: translating ambiguous requests into designs the data model can actually carry, and sending back the ones it shouldn't. Increasingly I build <em>on</em> the platform, not only in it — internal tooling and Claude API agents, one of which retired a paid vendor.</p>
+          <p>Lately that curiosity has turned into production-shaped AI workflows: administering Gemini Enterprise, leading internal Claude adoption, and a spec-first, multi-agent loop <a href="#sf-ticket"><code>/sf-ticket</code></a> that investigates Salesforce tickets, locks an approved spec by hash, and keeps agents away from production unless a person says go.</p>
+          <p>I live in Carmel, Indiana, and work remotely.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index">01</p>
+          <h2 id="skills-heading">Skills</h2>
+        </header>
+        <dl class="skills">
+          <div>
+            <dt>Salesforce platform</dt>
+            <dd>Salesforce Administration · Sales Cloud · Service Cloud · CPQ · Revenue Cloud · Marketing Cloud · Experience Cloud · Field Service Lightning (Galvin) · Apex · Flow · Lightning Web Components (LWC) · SOQL · Agentforce</dd>
+          </div>
+          <div>
+            <dt>Architecture, RevOps, and GTM</dt>
+            <dd>Solution architecture · RevOps · GTM systems · Product, price, and approval rules · Multi-currency and usage-based, consumption, variable, and fixed pricing · Territory management · Guided quoting · Acquisitions and data integration</dd>
+          </div>
+          <div>
+            <dt>Data and integration</dt>
+            <dd>SQL · Snowflake · Tableau · MongoDB · MuleSoft · Fivetran · Openprise · Marketo · Pardot · Gong · DocuSign · Outreach · LeanData · LMS systems · NetSuite · Fonteva · Conga (consulting-era)</dd>
+          </div>
+          <div>
+            <dt>DevOps and delivery</dt>
+            <dd>Gearset · GitHub · CI/CD · Jira · Agile · Salesforce CLI / Salesforce DX. Migrated a formal DevOps lifecycle from AutoRABIT to Gearset.</dd>
+          </div>
+          <div>
+            <dt>AI and enablement</dt>
+            <dd>Claude Code · Claude API · Cursor · Cowork · Gemini Enterprise · Multi-step agents (research, tool use, structured synthesis) · Hook-enforced agent guardrails</dd>
+          </div>
+        </dl>
+        <div class="certs">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Salesforce Certified Administrator (Admin 201)</li>
+            <li>Salesforce Certified Advanced Administrator</li>
+            <li>Salesforce Certified Platform App Builder</li>
+            <li>Salesforce Certified Sales Cloud Consultant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index">02</p>
+          <h2 id="projects-heading">Projects</h2>
+        </header>
+        <p class="lede">Public work. The delivery loop is the one to read first.</p>
+
+        <article class="featured" id="sf-ticket" aria-labelledby="sf-ticket-title">
+          <p class="kicker">Featured · Python · MIT</p>
+          <h3 id="sf-ticket-title"><a href="https://github.com/beck-systems/salesforce-agentic-sdlc" target="_blank" rel="noopener noreferrer">/sf-ticket<span class="sr-only"> (opens in a new tab)</span></a></h3>
+          <p class="one-liner">A gated, multi-agent Salesforce delivery loop on Claude Code, run with one command.</p>
+
+          <ol class="flow" aria-label="Stages of the /sf-ticket loop">
+            <li data-kind="read">
+              <p class="flow-kicker"><span class="flow-num">01</span> <span class="flow-kind">Read-only · gate</span></p>
+              <span class="flow-name">Intake</span>
+              <span class="flow-hint">Ticket, Slack thread, or pasted text. The operator confirms the lane.</span>
+            </li>
+            <li data-kind="read">
+              <p class="flow-kicker"><span class="flow-num">02</span> <span class="flow-kind">Read-only</span></p>
+              <span class="flow-name">Investigate</span>
+              <span class="flow-hint">Org state and repo history. The hook blocks writes.</span>
+            </li>
+            <li data-kind="read">
+              <p class="flow-kicker"><span class="flow-num">03</span> <span class="flow-kind">Read-only</span></p>
+              <span class="flow-name">Verify</span>
+              <span class="flow-hint">Every claim graded confirmed, plausible, or refuted.</span>
+            </li>
+            <li data-kind="gate">
+              <p class="flow-kicker"><span class="flow-num">04</span> <span class="flow-kind">Human gate</span></p>
+              <span class="flow-name">Spec</span>
+              <span class="flow-hint">A person approves. The spec is locked by hash.</span>
+            </li>
+            <li data-kind="write">
+              <p class="flow-kicker"><span class="flow-num">05</span> <span class="flow-kind">Sandbox</span></p>
+              <span class="flow-name">Build</span>
+              <span class="flow-hint">The only stage that changes metadata, in a sandbox and its own worktree.</span>
+            </li>
+            <li data-kind="qa">
+              <p class="flow-kicker"><span class="flow-num">06</span> <span class="flow-kind">Checks</span></p>
+              <span class="flow-name">QA</span>
+              <span class="flow-hint">Derived from the spec, before anything is promoted.</span>
+            </li>
+            <li data-kind="gate">
+              <p class="flow-kicker"><span class="flow-num">07</span> <span class="flow-kind">Human gate</span></p>
+              <span class="flow-name">Promote</span>
+              <span class="flow-hint">Gearset. A person says go before it moves forward.</span>
+            </li>
+            <li data-kind="gate">
+              <p class="flow-kicker"><span class="flow-num">08</span> <span class="flow-kind">Human gate</span></p>
+              <span class="flow-name">Close-out</span>
+              <span class="flow-hint">Jira, Confluence, and Slack.</span>
+            </li>
+          </ol>
+          <ul class="legend">
+            <li><span class="swatch swatch-read" aria-hidden="true"></span> Read-only, hook-enforced</li>
+            <li><span class="swatch swatch-write" aria-hidden="true"></span> Metadata changes in the sandbox only</li>
+            <li><span class="swatch swatch-gate" aria-hidden="true"></span> A person approves</li>
+          </ul>
+
+          <div class="prose">
+            <p><code>/sf-ticket</code> takes a Salesforce request — a ticket, a Slack thread, or pasted text — and runs it through the same loop every time. Six specialized agents do the work. Hooks written in Python, not prompt instructions, decide what each agent is allowed to touch, and a human approves every outward or irreversible step.</p>
+            <p>The design pulls find apart from fix. Four agents are read-only, enforced by a hook. Only the builder changes metadata, and only in a build sandbox and its own git worktree. The approved spec is hashed; if the spec changes after approval, the builder's hook refuses to deploy. A verifier re-runs the queries itself and grades every claim confirmed, plausible, or refuted before any spec is written. Company-specific paths and org aliases live in two config files, so the workflow can move between orgs unchanged.</p>
+            <p>Lanes — support, explain, change, bug, and GTM — decide which stages run. The GTM lane does not build.</p>
+          </div>
+          <p class="limit">v1 has been used on real support, change, and bug tickets. Not built yet: unattended intake, builds for the GTM lane, and a dashboard of case-file frontmatter.</p>
+          <a class="button external" href="https://github.com/beck-systems/salesforce-agentic-sdlc" target="_blank" rel="noopener noreferrer">View the repository<span class="sr-only"> (opens in a new tab)</span></a>
+        </article>
+
+        <div class="cards">
+          <article class="card" id="field-audit">
+            <div class="card-media">
+              <img src="assets/img/field-audit.jpg" width="1600" height="913" alt="Synthetic Contact field-audit report showing population rates and deprecation candidates." loading="lazy">
+            </div>
+            <p class="caption">Bundled example. Synthetic data, not a customer org.</p>
+            <p class="kicker">Python · MIT</p>
+            <h3><a href="https://github.com/beck-systems/salesforce-field-audit-skill" target="_blank" rel="noopener noreferrer">Salesforce Field Audit<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="one-liner">A Claude Code skill that shows which custom fields are actually used — and which are safe to deprecate.</p>
+            <div class="prose">
+              <p>It audits field usage on any Salesforce object: which custom fields are populated, how that has changed in the last twelve months, and which ones look abandoned. I built it after a run on a production Account object with roughly 300 custom fields accumulated over a decade of integrations, where 38% were dead, near-dead, or quietly abandoned, most of them left behind by a handful of decommissioned managed packages.</p>
+              <p>The live-query work — schema introspection, batched SOQL, recovering fields that cannot be aggregated, deciding what "inactive" means on an unfamiliar object — is driven by the model. Thresholds, package-namespace grouping, and report rendering are ordinary Python, so the rules do not drift from run to run. Parallel subagents fan out the expensive queries, which is why a ~300-field audit finishes in minutes. Output is a Markdown findings report plus a self-contained, searchable HTML field ledger.</p>
+            </div>
+            <p class="card-links">
+              <a class="external" href="https://github.com/beck-systems/salesforce-field-audit-skill" target="_blank" rel="noopener noreferrer">Repository<span class="sr-only"> for Salesforce Field Audit (opens in a new tab)</span></a>
+              <a class="external" href="https://github.com/beck-systems/salesforce-field-audit-skill/blob/main/examples/sample-report.html" target="_blank" rel="noopener noreferrer">Example report<span class="sr-only">, synthetic data (opens in a new tab)</span></a>
+            </p>
+          </article>
+
+          <article class="card" id="territory">
+            <div class="card-media">
+              <img src="assets/img/territory.jpg" width="1600" height="914" alt="Territory Management Console in Salesforce, with geographic rules and assigned owners." loading="lazy">
+            </div>
+            <p class="caption">Lightning admin console from the public project.</p>
+            <p class="kicker">Apex · LWC</p>
+            <h3><a href="https://github.com/beck-systems/AccountTerritoryManagement" target="_blank" rel="noopener noreferrer">Account Territory Management<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="one-liner">Configurable Salesforce territory assignment, with a Lightning admin UI and a full audit log — no deploy required to change a rule.</p>
+            <div class="prose">
+              <p>When an Account is inserted or updated, the engine evaluates active geographic territory rules in priority order — business line plus country and state, with blank fields as wildcards — and assigns an owner. Accounts that match no rule fall through to a per-business-line round-robin pool. Every attempt is written to an immutable assignment log. Admins manage rules, rotations, and manual overrides from a Lightning Web Component, and a custom permission lets integration users bypass the trigger.</p>
+              <p>The assignment service is bulk-safe: one SOQL and DML pass, no per-record queries. Test classes cover the controller, service, and end-to-end trigger path. It is a shipped Salesforce DX project.</p>
+            </div>
+            <p class="card-links">
+              <a class="external" href="https://github.com/beck-systems/AccountTerritoryManagement" target="_blank" rel="noopener noreferrer">Repository<span class="sr-only"> for Account Territory Management (opens in a new tab)</span></a>
+            </p>
+          </article>
+
+          <article class="card" id="gtm-agent">
+            <p class="kicker">Python</p>
+            <h3><a href="https://github.com/beck-systems/gtm-intelligence-agent" target="_blank" rel="noopener noreferrer">GTM Intelligence Agent<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="one-liner">A Claude API CLI that researches a company and a role, then writes a structured briefing and outreach opener.</p>
+            <ol class="chain" aria-label="Three calls in the GTM Intelligence Agent">
+              <li><span class="n">01</span> <span><strong>Company.</strong> Web search.</span></li>
+              <li><span class="n">02</span> <span><strong>Role.</strong> Fetches a posting URL when it can.</span></li>
+              <li><span class="n">03</span> <span><strong>Synthesis.</strong> No search. Snapshot, fit signals, talking points, and a draft opener.</span></li>
+            </ol>
+            <div class="prose">
+              <p>A small, complete tool built directly on the Anthropic API — no agent framework and no low-code builder. The point is the architecture: deciding the workflow shape and what data moves between calls, instead of one freeform prompt.</p>
+              <p>I built it in five documented days, from a basic API call through tool use, chaining, a real CLI, and page fetch for job URLs. Login-walled postings fall back to search and come back thinner.</p>
+            </div>
+            <p class="card-links">
+              <a class="external" href="https://github.com/beck-systems/gtm-intelligence-agent" target="_blank" rel="noopener noreferrer">Repository<span class="sr-only"> for GTM Intelligence Agent (opens in a new tab)</span></a>
+            </p>
+          </article>
+
+          <article class="card" id="caseflow">
+            <div class="card-media is-tall">
+              <img src="assets/img/caseflow.jpg" width="960" height="960" alt="CaseFlow console preview with SLA countdowns, an agent rank, and a case detail panel." loading="lazy">
+            </div>
+            <p class="caption">Portfolio UI, not a production app.</p>
+            <p class="kicker">LWC · Apex · JavaScript</p>
+            <h3><a href="https://github.com/beck-systems/case-flow" target="_blank" rel="noopener noreferrer">CaseFlow<span class="sr-only"> (opens in a new tab)</span></a></h3>
+            <p class="one-liner">A gamified Salesforce case and SLA console — portfolio work that shows modern LWC, Apex, and UI craft.</p>
+            <div class="prose">
+              <p>CaseFlow turns a standard case queue into a mission-control console: live per-second SLA countdowns by priority, an agent HUD with XP and rank titles, resolution streaks, and a zero-dependency HTML5 canvas confetti burst when a case is closed. The Apex controller is <code>with sharing</code>, and the UI is a custom dark, glassmorphic design system that stays inside Lightning Locker and LWS rules.</p>
+              <p>This is a portfolio project, not a production app from my day job. It is where I show front-end craft — I was a graphic designer before Salesforce — without claiming operational impact.</p>
+            </div>
+            <p class="card-links">
+              <a class="external" href="https://github.com/beck-systems/case-flow" target="_blank" rel="noopener noreferrer">Repository<span class="sr-only"> for CaseFlow (opens in a new tab)</span></a>
+            </p>
+          </article>
+        </div>
+
+        <div class="also">
+          <h3>Also</h3>
+          <p>
+            <a class="external" href="https://github.com/beck-systems/claude-agent-demo" target="_blank" rel="noopener noreferrer">Claude Agent Demo<span class="sr-only"> (opens in a new tab)</span></a>
+            — a minimal, readable example of Anthropic's Managed Agents API. The script creates an agent, provisions a cloud environment, starts a session, and streams text and tool calls. A short learning demo (a line-counter task), not a production system. Python.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index">03</p>
+          <h2 id="experience-heading">Experience</h2>
+        </header>
+        <p class="lede">The architecture ownership is the JumpCloud role, from 2021. The decade in GTM systems starts earlier.</p>
+        <ol class="timeline">
+          <li>
+            <p class="when"><time datetime="2021-07">Jul 2021</time> – Present</p>
+            <div class="role-body">
+              <h3 class="role">Senior Salesforce Business Analyst</h3>
+              <p class="org">JumpCloud · Denver</p>
+              <ul>
+                <li>I am the functioning product owner of Salesforce for a 500+ user org spanning Service Cloud, Sales Cloud, CPQ / Revenue Cloud, Marketing Cloud, and Experience Cloud. I debug Apex and integration issues alongside developers, keep internal support moving by syncing Slack with Jira, and align the architecture with IT security and data governance.</li>
+                <li>I lead AI enablement across the company: administer Google Gemini Enterprise (provisioning, seats, and governance), drive internal Claude adoption from use-case discovery through workflow integration, and build multi-step Claude API agents — including one that retired a paid vendor. I work daily in Claude Code and Cursor on production-ready, AI-assisted solutions.</li>
+                <li>I stood up a formal DevOps lifecycle, migrating from AutoRABIT to Gearset and using GitHub for versioned deployments, plus Cursor-based automated testing on commit. That replaced manual deployments and cut production bugs.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when"><time datetime="2018-04">Apr 2018</time> – <time datetime="2021-07">Jul 2021</time></p>
+            <div class="role-body">
+              <h3 class="role">Salesforce Consultant</h3>
+              <p class="org">Galvin Technologies · Indianapolis</p>
+              <ul>
+                <li>I partnered with executive leadership to find operational bottlenecks and architect end-to-end solutions that could scale with the business.</li>
+                <li>I wrote, tested, and deployed custom Apex triggers and batch classes for high-volume processing and logic that configuration alone could not carry.</li>
+                <li>I led the end-to-end design and rollout of Field Service Lightning for a large enterprise, streamlining mobile workforce management.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="when"><time datetime="2016-04">Apr 2016</time> – <time datetime="2018-04">Apr 2018</time></p>
+            <div class="role-body">
+              <h3 class="role">Salesforce Administrator</h3>
+              <p class="org">Equian · Indianapolis</p>
+            </div>
+          </li>
+        </ol>
+        <p class="prior">Before Salesforce: graphic design at Adidas &amp; Reebok (2014–2016) and Genius / Technician at Apple (2009–2014).</p>
+        <p class="prior">Education: Indiana University Indianapolis, Informatics, 2008–2012.</p>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-heading">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="index">04</p>
+          <h2 id="approach-heading">Approach</h2>
+        </header>
+        <p class="approach-note">A personal method for spec-driven development on Salesforce. It is not a published program.</p>
+        <blockquote class="pull">The spec is the deliverable. The org is the truth. Agents draft; humans approve; nothing reaches production without a person pressing the button.</blockquote>
+        <p class="approach-note">Unlike repo-based spec-driven development, the live Salesforce org — not git — is the source of truth. That calls for three artifacts most software work skips.</p>
+        <ol class="artifacts">
+          <li>
+            <h3>Org baseline</h3>
+            <p>As-is automation and the order of operations.</p>
+          </li>
+          <li>
+            <h3>Impact analysis</h3>
+            <p>Salesforce has no compiler for this. The analysis is what shows what a change will touch.</p>
+          </li>
+          <li>
+            <h3>Deployment and rollback</h3>
+            <p>Deploys are neither atomic nor reversible, so the plan belongs in the spec.</p>
+          </li>
+        </ol>
+        <p class="aside">Separately, I use Tailscale as the network backbone of a personal local AI setup, SSHing into my home computer and running agentic development sessions in Termius.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="index">05</p>
+        <h2 id="contact-heading">Contact</h2>
+      </header>
+      <p class="contact-lead">Carmel, Indiana. I work remotely.</p>
+      <ul class="contact-links">
+        <li><a class="external" href="https://github.com/beck-systems" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a class="external" href="https://www.linkedin.com/in/brandon-beck-42044a49/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <!--
+          RESUME LINK
+          Add a public, phone-free resume here when one is ready.
+          Do not commit the master resume: it contains a phone number.
+          Leave this commented until the file exists:
+
+          <li><a href="resume.pdf">Resume</a></li>
+
+          Email is intentionally omitted until Brandon approves publishing it.
+        -->
+      </ul>
+      <p class="colophon">Brandon Beck · Carmel, IN</p>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+</body>
+</html>
